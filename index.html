@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+    <title>eKard - Genera cartoline elettroniche ora!</title>
+    <meta content="">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script src="js/new.js" type="text/javascript"></script>
+  </head>
+
+  <body onload="aload()">
+
+    <h1 style="text-align: center; color: lightblue; font-family: Arial;">eKard - Generatore cartoline elettroniche</h1>
+    <div id="new">
+      <h2>Personalizza la tua cartolina</h2>
+      <textarea id="message"  rows=7 cols=20 placeholder="Scrivi qui il messaggio" onkeyup="anteprima()"  onchange="anteprima()" ></textarea><br>
+	  <input type="text" id="destinatario" size="25" placeholder="Nome destinatario" onchange="anteprima()" onkeyup="anteprima()"><br>
+      <input type="text" id="mittente" size="25" placeholder="Nome mittente" onchange="anteprima()" onkeyup="anteprima()"><br>
+      <input type="text" id="urli" size="25" placeholder="URL immagine (opzionale)" onchange="anteprima()" onkeyup="anteprima()"><br>
+	  
+	  <div style="position: relative; left:40%; right:70%;">
+      <!--<div id="icon">&nbsp;</div>-->
+	  
+	  <select  id="icon" name="Immagine">
+		<option value="1" onchange="icon(this.value);">Natale</option>
+		<option value="2" onchange="icon(this.value);">Compleanno</option>
+		<option value="3" onchange="icon(this.value);">Pasqua</option>
+		<option value="4" onchange="icon(this.value);">Laurea</option>
+	</select>
+     
+     
+
+      <div id="sfondo">&nbsp;</div>
+    </div></div>
+	</br><hr>
+    <button style="position: relative; left:40%; right:70%;" type="button" onclick="ante()">Anteprima ON/OFF</button>
+
+    <!--<div id="card_url">&nbsp;</div>-->
+
+    <br>
+    <div id="antebox">
+      <h2>Anteprima in tempo reale</h2>
+      <div id="cardbox">
+        <div id="anteprima">
+          <center>
+            <img id="img"/><br>
+            <p id="msg">&nbsp;</p>
+          </center>
+        </div>
+      </div>
+    </div>
+    <footer>
+     
+    </footer>
+  </body>
+</html>

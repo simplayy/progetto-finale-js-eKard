@@ -1,0 +1,54 @@
+body {
+  background-color: #469280;
+   position: absolute;
+  width: 500px;
+  height: 500px;
+  z-index: 0;
+  right: 70%;
+  left: 30%;
+  
+  
+}
+#new {
+  //larghezza uguale all'intero div	
+  width: 400px;
+}
+#card_image {
+  margin: 25px;
+  width: 40vw;
+}
+#cardbox {
+  border: 2px solid black;
+  width: 25vw;
+  margin-top: 5px;
+  padding: 7px;
+  font-weight: bold;
+  font-size: 120%;
+  color: #fff;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+footer {
+  margin: 15px 0 15px 0;
+}
+
+textarea {
+  width: 100%;
+ 
+}
+textarea:focus{
+	background-color: yellow;
+}
+#sfondo{
+	text-align: center;
+	
+	
+}
+
+input[type=text]{
+	
+    color: brown;
+	width: 100%;
+}
+input[type=text]:focus {
+    background-color: lightblue;
+}
