@@ -1,17 +1,16 @@
 body {
-  background-color: #469280;
-   position: absolute;
+  background-image: url("img/bg.jpg");
+  position: absolute;
   width: 500px;
   height: 500px;
   z-index: 0;
-  right: 70%;
-  left: 30%;
-  
-  
+  left: 35%;
 }
 #new {
-  //larghezza uguale all'intero div	
-  width: 400px;
+  background-color: #55aaaa;
+  border-style: solid;
+  border-size: 4px;
+  width: 25vw;
 }
 #card_image {
   margin: 25px;
@@ -23,7 +22,7 @@ body {
   margin-top: 5px;
   padding: 7px;
   font-weight: bold;
-  font-size: 120%;
+  font-size: 200%;
   color: #fff;
   text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
@@ -37,11 +36,6 @@ textarea {
 }
 textarea:focus{
 	background-color: yellow;
-}
-#sfondo{
-	text-align: center;
-	
-	
 }
 
 input[type=text]{
